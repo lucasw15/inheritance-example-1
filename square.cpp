@@ -10,12 +10,14 @@ using std::stringstream;
 using std::cout;
 using std::endl;
 
-Square::Square(size_t side) {
-	cout << "Square::Square(" << side << ")" << endl;
+Square::Square(size_t side): Rectangle(side, side) {
+	cout << "\t\tSquare::Square(" << side << ")" << endl;
 }
 Square::~Square(){
-	cout << "Square::~Square()" << endl;
+	cout << "\t\tSquare::~Square()" << endl;
 }
 string Square::ToString()const{
-
+	stringstream retVal;
+	retVal << "Square: " << Rectangle::ToString();
+	return retVal.str();
 }
