@@ -12,5 +12,11 @@ int main(int argc, char* argv[]){
 	cout << r.Perimeter() << endl;
 	cout << r.Area() << endl;
 
+	Square s(10);
+	cout << s.ToString() << endl;
+	cout << s.Perimeter() << endl;
+	cout << s.Area() << endl;
+
+
 	return 0;
 }
