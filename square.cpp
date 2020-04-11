@@ -10,7 +10,7 @@ using std::stringstream;
 using std::cout;
 using std::endl;
 
-Square::Square(size_t side): Rectangle(side, side) {
+Square::Square(const Point& upperLeft, size_t side): Rectangle(upperLeft, side, side) {
 	cout << "\t\tSquare::Square(" << side << ")" << endl;
 }
 Square::~Square(){

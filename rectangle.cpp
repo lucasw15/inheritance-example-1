@@ -9,7 +9,7 @@ using std::stringstream;
 using std::cout;
 using std::endl;
 
-Rectangle::Rectangle(size_t width, size_t height) : _width(width), _height(height){
+Rectangle::Rectangle(const Point& upperLeft, size_t width, size_t height) : _height(height), _width(width), _upperLeft(upperLeft){
 	cout << "\tRectangle::Rectangle(" << _width << ", " << _height << ")" << endl;
 }
 Rectangle::~Rectangle(){
